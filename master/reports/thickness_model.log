@@ -17,18 +17,21 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-import seaborn as sns
-plt.figure(figsize=(10, 8));
-sns.heatmap(df.corr(), cmap='RdBu');
+import warnings
+warnings.filterwarnings("ignore")  # sklearn sends a lot of warnings
+# Scikit learn (can be installed e.g. via conda install -c anaconda scikit-learn)
+from sklearn.linear_model import LassoCV
+from sklearn.model_selection import KFold
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-[0;32m<ipython-input-20-d6b0ccd3e669>[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0;32mimport[0m [0mseaborn[0m [0;32mas[0m [0msns[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m      2[0m [0mplt[0m[0;34m.[0m[0mfigure[0m[0;34m([0m[0mfigsize[0m[0;34m=[0m[0;34m([0m[0;36m10[0m[0;34m,[0m [0;36m8[0m[0;34m)[0m[0;34m)[0m[0;34m;[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      3[0m [0msns[0m[0;34m.[0m[0mheatmap[0m[0;34m([0m[0mdf[0m[0;34m.[0m[0mcorr[0m[0;34m([0m[0;34m)[0m[0;34m,[0m [0mcmap[0m[0;34m=[0m[0;34m'RdBu'[0m[0;34m)[0m[0;34m;[0m[0;34m[0m[0;34m[0m[0m
+[0;32m<ipython-input-21-a53f89247815>[0m in [0;36m<module>[0;34m[0m
+[1;32m      2[0m [0mwarnings[0m[0;34m.[0m[0mfilterwarnings[0m[0;34m([0m[0;34m"ignore"[0m[0;34m)[0m  [0;31m# sklearn sends a lot of warnings[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      3[0m [0;31m# Scikit learn (can be installed e.g. via conda install -c anaconda scikit-learn)[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 4[0;31m [0;32mfrom[0m [0msklearn[0m[0;34m.[0m[0mlinear_model[0m [0;32mimport[0m [0mLassoCV[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      5[0m [0;32mfrom[0m [0msklearn[0m[0;34m.[0m[0mmodel_selection[0m [0;32mimport[0m [0mKFold[0m[0;34m[0m[0;34m[0m[0m
 
-[0;31mModuleNotFoundError[0m: No module named 'seaborn'
-ModuleNotFoundError: No module named 'seaborn'
+[0;31mModuleNotFoundError[0m: No module named 'sklearn'
+ModuleNotFoundError: No module named 'sklearn'
 

@@ -430,17 +430,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">28481</span><span class="n">f7c2761</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s1">&#39;notebook&#39;</span><span class="p">)</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;seaborn&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -463,6 +452,20 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:55:43: oggm.cfg: Reading default parameters from the OGGM `params.cfg` configuration file.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:55:43: oggm.cfg: Multiprocessing switched OFF according to the parameter file.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:55:43: oggm.cfg: Multiprocessing: using all available processors (N=2)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:55:44: oggm.cfg: PARAMS[&#39;border&#39;] changed from `40` to `10`.
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="pick-a-glacier">
@@ -474,12 +477,131 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:55:44: oggm.workflow: init_glacier_directories from prepro level 3 on 1 glaciers.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:55:44: oggm.workflow: Execute entity task gdir_from_prepro on 1 glaciers
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:55:44: oggm.utils: Downloading https://cluster.klima.uni-bremen.de/~oggm/gdirs/oggm_v1.4/L3-L5_files/CRU/centerlines/qc3/pcp2.5/no_match/RGI62/b_010/L3/RGI60-01/RGI60-01.03.tar to /github/home/OGGM/download_cache/cluster.klima.uni-bremen.de/~oggm/gdirs/oggm_v1.4/L3-L5_files/CRU/centerlines/qc3/pcp2.5/no_match/RGI62/b_010/L3/RGI60-01/RGI60-01.03.tar...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>N/A% of  68.8 MiB |                      | Elapsed Time: 0:00:00 ETA:  --:--:--
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  68.8 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:02:40
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  68.8 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:01:11
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1% of  68.8 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:00:44
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  2% of  68.8 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:00:43
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  5% of  68.8 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:14
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  8% of  68.8 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:13
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 12% of  68.8 MiB |##                    | Elapsed Time: 0:00:00 ETA:   0:00:06
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 17% of  68.8 MiB |###                   | Elapsed Time: 0:00:01 ETA:   0:00:05
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 21% of  68.8 MiB |####                  | Elapsed Time: 0:00:01 ETA:   0:00:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 25% of  68.8 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 29% of  68.8 MiB |######                | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 33% of  68.8 MiB |#######               | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 37% of  68.8 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 41% of  68.8 MiB |#########             | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 45% of  68.8 MiB |##########            | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 49% of  68.8 MiB |##########            | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 50% of  68.8 MiB |###########           | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 54% of  68.8 MiB |###########           | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 58% of  68.8 MiB |############          | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 60% of  68.8 MiB |#############         | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 63% of  68.8 MiB |#############         | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 67% of  68.8 MiB |##############        | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 70% of  68.8 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 72% of  68.8 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 75% of  68.8 MiB |################      | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 79% of  68.8 MiB |#################     | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 83% of  68.8 MiB |##################    | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 84% of  68.8 MiB |##################    | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 88% of  68.8 MiB |###################   | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 92% of  68.8 MiB |####################  | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 96% of  68.8 MiB |##################### | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:55:48: oggm.utils: /github/home/OGGM/download_cache/cluster.klima.uni-bremen.de/~oggm/gdirs/oggm_v1.4/L3-L5_files/CRU/centerlines/qc3/pcp2.5/no_match/RGI62/b_010/L3/RGI60-01/RGI60-01.03.tar verified successfully.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% of  68.8 MiB |######################| Elapsed Time: 0:00:03 Time:  0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">graphics</span><span class="o">.</span><span class="n">plot_centerlines</span><span class="p">(</span><span class="n">gdir</span><span class="p">,</span> <span class="n">use_flowlines</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/inversion_with_frontal_ablation_10_0.png" src="../_images/inversion_with_frontal_ablation_10_0.png" />
 </div>
 </div>
 <p><strong>Let’s first see the results of the inversion without calving:</strong></p>
@@ -488,6 +610,9 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">graphics</span><span class="o">.</span><span class="n">plot_inversion</span><span class="p">(</span><span class="n">gdir</span><span class="p">);</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/inversion_with_frontal_ablation_12_0.png" src="../_images/inversion_with_frontal_ablation_12_0.png" />
 </div>
 </div>
 </div>
@@ -502,6 +627,17 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Default calving flux:</span>
 <span class="n">calving_flux_from_depth</span><span class="p">(</span><span class="n">gdir</span><span class="p">,</span> <span class="n">water_level</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;flux&#39;: 0.0016181275571048193,
+ &#39;width&#39;: 775.0815795377595,
+ &#39;thick&#39;: 113.78948631464273,
+ &#39;inversion_calving_k&#39;: 0.6,
+ &#39;water_depth&#39;: 30.57820241598911,
+ &#39;water_level&#39;: 0,
+ &#39;free_board&#39;: 83.21128389865362}
 </pre></div>
 </div>
 </div>
@@ -526,6 +662,9 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/inversion_with_frontal_ablation_18_0.png" src="../_images/inversion_with_frontal_ablation_18_0.png" />
+</div>
 </div>
 <p>The flux is zero as long as the ice isn’t thick enough to reach the water surface, after which the water depth is positive and calving occurs. The calving flux varies with <span class="math notranslate nohighlight">\(H\)</span> as a polynomial of degree 2.</p>
 <p>We don’t know which is the <strong>real</strong> value of the calving flux at this glacier. From here, let’s make some very coarse assumptions:</p>
@@ -543,6 +682,14 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Reference data for the recalibration of the mass-balance</span>
 <span class="n">ref_tstars_url</span> <span class="o">=</span> <span class="s1">&#39;https://cluster.klima.uni-bremen.de/~oggm/ref_mb_params/oggm_v1.4/RGIV62/CRU/centerlines/qc3/pcp2.5&#39;</span>
 <span class="n">workflow</span><span class="o">.</span><span class="n">download_ref_tstars</span><span class="p">(</span><span class="n">base_url</span><span class="o">=</span><span class="n">ref_tstars_url</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:56:28: oggm.utils: /github/home/OGGM/download_cache/cluster.klima.uni-bremen.de/~oggm/ref_mb_params/oggm_v1.4/RGIV62/CRU/centerlines/qc3/pcp2.5/ref_tstars.csv verified successfully.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:56:28: oggm.utils: /github/home/OGGM/download_cache/cluster.klima.uni-bremen.de/~oggm/ref_mb_params/oggm_v1.4/RGIV62/CRU/centerlines/qc3/pcp2.5/ref_tstars_params.json verified successfully.
 </pre></div>
 </div>
 </div>
@@ -592,6 +739,9 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/inversion_with_frontal_ablation_23_0.png" src="../_images/inversion_with_frontal_ablation_23_0.png" />
+</div>
 </div>
 <p>We already know that the calving law (<strong>eq. 1</strong>) relates the thickness to the flux with a root of degree two (blue curve). Now, what explains the shape of the orange curve? It is Glen’s flow law, which relates ice thickness to the flux with a 5th degree root (assuming n=3). The graphic shows that, for this glacier, there is at least one solution to the problem of finding a calving flux which is compatible with both the calving law and the physics of ice deformation (where the two lines cross).</p>
 <p>Note that adding sliding doesn’t change the problem (we still solve a polynomial of degree 5 in OGGM, <a class="reference external" href="https://docs.oggm.org/en/stable/ice-dynamics.html">with a new term in degree 3</a>):</p>
@@ -602,6 +752,9 @@
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Ice thickness (m)&#39;</span><span class="p">);</span>   
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/inversion_with_frontal_ablation_25_0.png" src="../_images/inversion_with_frontal_ablation_25_0.png" />
 </div>
 </div>
 <p>This plot is a bit misleading. The orange and green curve cross the blue line in two places, as we are going to show.</p>
@@ -675,6 +828,9 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/inversion_with_frontal_ablation_34_0.png" src="../_images/inversion_with_frontal_ablation_34_0.png" />
+</div>
 </div>
 <p>In this representation of the same data as above (here as a function of the prescribed water depth), one sees more clearly that there exist two locations where the zero line is crossed. This pattern is consistent for all but one glaciers in Alaska (see below), and we choose to pick the only realistic solution (the larger of the two). Indeed, the smallest solution leads to unrealistically small water depths and calving fluxes. Note that in the first two versions of the manuscript (with a different way to solve the equations), it is always the largest solution that was found: therefore, there is no noticeable change in the results between the last two manuscript versions.</p>
 <p>To solve our problem, we first seek the absolute minimum of the function(s), and then look for zeros above and below this point. It’s the larger solution which is retained.</p>
@@ -687,6 +843,11 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>42.14726769695331
+</pre></div>
+</div>
+</div>
 </div>
 <p>Now we find the roots of the functions between the interval  [0.0001 - 10000]. Using the python tool: <a class="reference external" href="https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.optimize.brentq.html">optimize.brentq()</a>.</p>
 <p>As observed in the previous plot we have two minima:</p>
@@ -694,6 +855,12 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Optimum water depth 1 (in m)&#39;</span><span class="p">,</span> <span class="n">optimize</span><span class="o">.</span><span class="n">brentq</span><span class="p">(</span><span class="n">to_solve_default</span><span class="p">,</span> <span class="mf">1e-4</span><span class="p">,</span> <span class="n">abs_min</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Optimum water depth 2 (in m)&#39;</span><span class="p">,</span> <span class="n">optimize</span><span class="o">.</span><span class="n">brentq</span><span class="p">(</span><span class="n">to_solve_default</span><span class="p">,</span> <span class="n">abs_min</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="mf">1e4</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimum water depth 1 (in m) 2.9899016853556644
+Optimum water depth 2 (in m) 143.7924777099962
 </pre></div>
 </div>
 </div>
@@ -715,6 +882,17 @@ In the code we always pick the larger solution.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;flux&#39;: 0.015179864222832417,
+ &#39;width&#39;: 775.0815795377595,
+ &#39;thick&#39;: 227.00376160864982,
+ &#39;inversion_calving_k&#39;: 0.6,
+ &#39;water_depth&#39;: 143.7924777099962,
+ &#39;water_level&#39;: 0,
+ &#39;free_board&#39;: 83.21128389865362}
+</pre></div>
+</div>
+</div>
 </div>
 <p>The process described above is implemented in the OGGM codebase in the following task: <a class="reference external" href="https://docs.oggm.org/en/stable/generated/oggm.tasks.find_inversion_calving.html?highlight=find_inversion_calving#oggm-tasks-find-inversion-calving">find_inversion_calving()</a>. This is what we use in operation, when <code class="docutils literal notranslate"><span class="pre">use_kcalving_for_inversion</span></code> is switched on, and it provides the same results:</p>
 <div class="cell docutils container">
@@ -723,6 +901,30 @@ In the code we always pick the larger solution.</p>
 <span class="n">cfg</span><span class="o">.</span><span class="n">PARAMS</span><span class="p">[</span><span class="s1">&#39;use_kcalving_for_inversion&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="n">out</span> <span class="o">=</span> <span class="n">find_inversion_calving</span><span class="p">(</span><span class="n">gdir</span><span class="p">,</span> <span class="n">water_level</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">out</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:17: oggm.cfg: PARAMS[&#39;use_kcalving_for_inversion&#39;] changed from `False` to `True`.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:17: oggm.core.inversion: (RGI60-01.03622) find_inversion_calving
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:21: oggm.core.inversion: (RGI60-01.03622) find_inversion_calving_from_any_mb: found calving flux of 0.015 km3 yr-1
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;calving_flux&#39;: 0.015179864222832573,
+ &#39;calving_rate_myr&#39;: 86.27548662599843,
+ &#39;calving_mu_star&#39;: 91.70437425591591,
+ &#39;calving_law_flux&#39;: 0.015179864222832498,
+ &#39;calving_water_level&#39;: 0,
+ &#39;calving_inversion_k&#39;: 0.6,
+ &#39;calving_front_slope&#39;: 0.11600123219190657,
+ &#39;calving_front_water_depth&#39;: 143.7924777099967,
+ &#39;calving_front_free_board&#39;: 83.21128389865362,
+ &#39;calving_front_thick&#39;: 227.0037616086503,
+ &#39;calving_front_width&#39;: 775.0815795377595}
 </pre></div>
 </div>
 </div>
@@ -753,11 +955,37 @@ In the code we always pick the larger solution.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[10.0, 50.0]
+</pre></div>
+</div>
+</div>
 </div>
 <p>This means that we do not allow free-board higher than 50 (conservative value, could be changed to 75 m). This has an influence on the results. See how the calving flux changes with these new defaults:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">find_inversion_calving</span><span class="p">(</span><span class="n">gdir</span><span class="p">,</span> <span class="n">water_level</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>  <span class="c1"># use default values</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:21: oggm.core.inversion: (RGI60-01.03622) find_inversion_calving
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:26: oggm.core.inversion: (RGI60-01.03622) find_inversion_calving_from_any_mb: found calving flux of 0.022 km3 yr-1
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;calving_flux&#39;: 0.02220788362949491,
+ &#39;calving_rate_myr&#39;: 116.97117335284842,
+ &#39;calving_mu_star&#39;: 91.28106176613524,
+ &#39;calving_law_flux&#39;: 0.0222078836294945,
+ &#39;calving_water_level&#39;: 33.21128389865362,
+ &#39;calving_inversion_k&#39;: 0.6,
+ &#39;calving_front_slope&#39;: 0.11600123219190657,
+ &#39;calving_front_water_depth&#39;: 194.9519555880771,
+ &#39;calving_front_free_board&#39;: 50.0,
+ &#39;calving_front_thick&#39;: 244.9519555880771,
+ &#39;calving_front_width&#39;: 775.0815795377595}
 </pre></div>
 </div>
 </div>
@@ -797,6 +1025,38 @@ In the code we always pick the larger solution.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:26: oggm.core.climate: (RGI60-01.03622) local_t_star
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:26: oggm.core.climate: (RGI60-01.03622) local mu* computation for t*=1964
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:26: oggm.core.climate: (RGI60-01.03622) mu_star_calibration
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:28: oggm.core.climate: (RGI60-01.03622) local_t_star
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:28: oggm.core.climate: (RGI60-01.03622) local mu* computation for t*=1964
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:28: oggm.core.climate: (RGI60-01.03622) mu_star_calibration
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mu* for the glacier without calving (in mm w.e. mth-1): 92.62
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:30: oggm.core.inversion: (RGI60-01.03622) prepare_for_inversion
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:30: oggm.core.inversion: (RGI60-01.03622) mass_conservation_inversion
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mu* for the glacier with calving (in mm w.e. mth-1): 91.70
+</pre></div>
+</div>
+</div>
 </div>
 <p>This is consistent: in order to allow for a frontal ablation flux, melt has to be reduced along the glacier. Note that not only the frontal thickness is affected by this change, the entire glacier becomes thicker:</p>
 <div class="cell docutils container">
@@ -804,6 +1064,9 @@ In the code we always pick the larger solution.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">graphics</span><span class="o">.</span><span class="n">plot_inversion</span><span class="p">(</span><span class="n">gdir</span><span class="p">);</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/inversion_with_frontal_ablation_60_0.png" src="../_images/inversion_with_frontal_ablation_60_0.png" />
 </div>
 </div>
 </div>
@@ -823,6 +1086,33 @@ In the code we always pick the larger solution.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:56: oggm.cfg: PARAMS[&#39;inversion_calving_k&#39;] changed from `0.6` to `24.0`.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:56: oggm.cfg: PARAMS[&#39;calving_min_mu_star_frac&#39;] changed from `0.7` to `0`.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:56: oggm.core.inversion: (RGI60-01.03622) find_inversion_calving
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:59: oggm.core.inversion: (RGI60-01.03622) find_inversion_calving_from_any_mb: found calving flux of 1.538 km3 yr-1
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;calving_flux&#39;: 1.5376960608989283,
+ &#39;calving_rate_myr&#39;: 3470.3198902418503,
+ &#39;calving_mu_star&#39;: 0.0,
+ &#39;calving_law_flux&#39;: 5.547752204120104,
+ &#39;calving_water_level&#39;: 33.21128389865362,
+ &#39;calving_inversion_k&#39;: 24.0,
+ &#39;calving_front_slope&#39;: 0.11600123219190657,
+ &#39;calving_front_water_depth&#39;: 521.6807607403077,
+ &#39;calving_front_free_board&#39;: 50.0,
+ &#39;calving_front_thick&#39;: 571.6807607403077,
+ &#39;calving_front_width&#39;: 775.0815795377595}
+</pre></div>
+</div>
+</div>
 </div>
 <p>After clipping <span class="math notranslate nohighlight">\(\mu^*\)</span>, we keep the thickness and flux that still statisfy mass-conservation and ice deformation (<span class="math notranslate nohighlight">\(q_{OGGM}\)</span>) instead of the calving law (<span class="math notranslate nohighlight">\(q_{calving}\)</span>).</p>
 <p><em><em>New as for version 1.4: we now have a mechanism to clip mu</em> to a value higher than 0, given as a fraction of the non-calving mu</em>:**</p>
@@ -835,6 +1125,30 @@ In the code we always pick the larger solution.</p>
 
 <span class="n">out</span> <span class="o">=</span> <span class="n">find_inversion_calving</span><span class="p">(</span><span class="n">gdir</span><span class="p">)</span>
 <span class="n">out</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:59: oggm.cfg: PARAMS[&#39;calving_min_mu_star_frac&#39;] changed from `0` to `0.7`.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:58:59: oggm.core.inversion: (RGI60-01.03622) find_inversion_calving
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-05-07 21:59:02: oggm.core.inversion: (RGI60-01.03622) find_inversion_calving_from_any_mb: found calving flux of 0.930 km3 yr-1
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;calving_flux&#39;: 0.9300311740488388,
+ &#39;calving_rate_myr&#39;: 2320.978475131525,
+ &#39;calving_mu_star&#39;: 36.60094278638051,
+ &#39;calving_law_flux&#39;: 4.4909861092712395,
+ &#39;calving_water_level&#39;: 33.21128389865362,
+ &#39;calving_inversion_k&#39;: 24.0,
+ &#39;calving_front_slope&#39;: 0.11600123219190657,
+ &#39;calving_front_water_depth&#39;: 466.98623222645926,
+ &#39;calving_front_free_board&#39;: 50.0,
+ &#39;calving_front_thick&#39;: 516.9862322264593,
+ &#39;calving_front_width&#39;: 775.0815795377595}
 </pre></div>
 </div>
 </div>
@@ -883,6 +1197,714 @@ In the code we always pick the larger solution.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>N/A% of  64.7 MiB |                      | Elapsed Time: 0:00:00 ETA:  --:--:--
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  64.7 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:02:30
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  64.7 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:01:41
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1% of  64.7 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:00:48
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  2% of  64.7 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:00:24
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  5% of  64.7 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:23
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  9% of  64.7 MiB |##                    | Elapsed Time: 0:00:00 ETA:   0:00:07
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 14% of  64.7 MiB |###                   | Elapsed Time: 0:00:00 ETA:   0:00:07
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 17% of  64.7 MiB |###                   | Elapsed Time: 0:00:01 ETA:   0:00:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 19% of  64.7 MiB |####                  | Elapsed Time: 0:00:01 ETA:   0:00:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 22% of  64.7 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 26% of  64.7 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 29% of  64.7 MiB |######                | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 31% of  64.7 MiB |######                | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 34% of  64.7 MiB |#######               | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 36% of  64.7 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 40% of  64.7 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 43% of  64.7 MiB |#########             | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 45% of  64.7 MiB |##########            | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 49% of  64.7 MiB |##########            | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 51% of  64.7 MiB |###########           | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 54% of  64.7 MiB |###########           | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 57% of  64.7 MiB |############          | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 59% of  64.7 MiB |#############         | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 63% of  64.7 MiB |#############         | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 64% of  64.7 MiB |##############        | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 68% of  64.7 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 72% of  64.7 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 74% of  64.7 MiB |################      | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 77% of  64.7 MiB |#################     | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 81% of  64.7 MiB |#################     | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 82% of  64.7 MiB |##################    | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 86% of  64.7 MiB |##################    | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 90% of  64.7 MiB |###################   | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 91% of  64.7 MiB |####################  | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 95% of  64.7 MiB |####################  | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 98% of  64.7 MiB |##################### | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% of  64.7 MiB |######################| Elapsed Time: 0:00:03 Time:  0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RGI60-01.04375
+Optimum small (in m) 3.879115018085558
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimum large (in m) 766.7562471578146
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RGI60-01.03377
+Optimum small (in m) 0.8767092368563045
+Optimum large (in m) 525.2806591959095
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>N/A% of  78.4 MiB |                      | Elapsed Time: 0:00:00 ETA:  --:--:--
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  78.4 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:03:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  78.4 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:01:22
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1% of  78.4 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:00:51
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  2% of  78.4 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:00:27
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  4% of  78.4 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:16
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  8% of  78.4 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:09
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 11% of  78.4 MiB |##                    | Elapsed Time: 0:00:00 ETA:   0:00:09
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 14% of  78.4 MiB |###                   | Elapsed Time: 0:00:01 ETA:   0:00:06
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 17% of  78.4 MiB |###                   | Elapsed Time: 0:00:01 ETA:   0:00:05
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 21% of  78.4 MiB |####                  | Elapsed Time: 0:00:01 ETA:   0:00:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 25% of  78.4 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 29% of  78.4 MiB |######                | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 32% of  78.4 MiB |#######               | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 36% of  78.4 MiB |#######               | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 39% of  78.4 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 43% of  78.4 MiB |#########             | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 47% of  78.4 MiB |##########            | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 51% of  78.4 MiB |###########           | Elapsed Time: 0:00:02 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 54% of  78.4 MiB |###########           | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 58% of  78.4 MiB |############          | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 62% of  78.4 MiB |#############         | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 65% of  78.4 MiB |##############        | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 69% of  78.4 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 72% of  78.4 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 73% of  78.4 MiB |################      | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 77% of  78.4 MiB |################      | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 80% of  78.4 MiB |#################     | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 84% of  78.4 MiB |##################    | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 88% of  78.4 MiB |###################   | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 92% of  78.4 MiB |####################  | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 95% of  78.4 MiB |##################### | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 99% of  78.4 MiB |##################### | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% of  78.4 MiB |######################| Elapsed Time: 0:00:03 Time:  0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RGI60-01.01390
+Optimum small (in m) 0.12725555240651673
+Optimum large (in m) 521.2668860494764
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>N/A% of  81.9 MiB |                      | Elapsed Time: 0:00:00 ETA:  --:--:--
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  81.9 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:03:08
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  81.9 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:01:17
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1% of  81.9 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:01:17
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  2% of  81.9 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:00:25
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  5% of  81.9 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:24
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  8% of  81.9 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:08
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 11% of  81.9 MiB |##                    | Elapsed Time: 0:00:00 ETA:   0:00:08
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 15% of  81.9 MiB |###                   | Elapsed Time: 0:00:01 ETA:   0:00:05
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 19% of  81.9 MiB |####                  | Elapsed Time: 0:00:01 ETA:   0:00:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 22% of  81.9 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 26% of  81.9 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 29% of  81.9 MiB |######                | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 33% of  81.9 MiB |#######               | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 36% of  81.9 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 37% of  81.9 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 40% of  81.9 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 41% of  81.9 MiB |#########             | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 44% of  81.9 MiB |#########             | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 48% of  81.9 MiB |##########            | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 51% of  81.9 MiB |###########           | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 55% of  81.9 MiB |############          | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 58% of  81.9 MiB |############          | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 62% of  81.9 MiB |#############         | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 65% of  81.9 MiB |##############        | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 69% of  81.9 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 73% of  81.9 MiB |################      | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 76% of  81.9 MiB |################      | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 80% of  81.9 MiB |#################     | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 83% of  81.9 MiB |##################    | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 87% of  81.9 MiB |###################   | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 90% of  81.9 MiB |####################  | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 94% of  81.9 MiB |####################  | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 98% of  81.9 MiB |##################### | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% of  81.9 MiB |######################| Elapsed Time: 0:00:03 Time:  0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RGI60-01.14391
+Optimum small (in m) 0.23994886545730745
+Optimum large (in m) 921.3178100109676
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>N/A% of  75.3 MiB |                      | Elapsed Time: 0:00:00 ETA:  --:--:--
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  75.3 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:02:56
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  75.3 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:01:12
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1% of  75.3 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:01:12
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  2% of  75.3 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:00:25
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  5% of  75.3 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:24
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  8% of  75.3 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:08
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 12% of  75.3 MiB |##                    | Elapsed Time: 0:00:00 ETA:   0:00:08
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 16% of  75.3 MiB |###                   | Elapsed Time: 0:00:01 ETA:   0:00:05
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 20% of  75.3 MiB |####                  | Elapsed Time: 0:00:01 ETA:   0:00:05
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 24% of  75.3 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 26% of  75.3 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 29% of  75.3 MiB |######                | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 31% of  75.3 MiB |######                | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 34% of  75.3 MiB |#######               | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 36% of  75.3 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 39% of  75.3 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 41% of  75.3 MiB |#########             | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 44% of  75.3 MiB |#########             | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 46% of  75.3 MiB |##########            | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 49% of  75.3 MiB |##########            | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 51% of  75.3 MiB |###########           | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 54% of  75.3 MiB |###########           | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 57% of  75.3 MiB |############          | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 59% of  75.3 MiB |#############         | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 62% of  75.3 MiB |#############         | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 63% of  75.3 MiB |#############         | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 65% of  75.3 MiB |##############        | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 68% of  75.3 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 71% of  75.3 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 73% of  75.3 MiB |################      | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 76% of  75.3 MiB |################      | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 78% of  75.3 MiB |#################     | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 81% of  75.3 MiB |#################     | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 83% of  75.3 MiB |##################    | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 86% of  75.3 MiB |##################    | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 88% of  75.3 MiB |###################   | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 91% of  75.3 MiB |####################  | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 93% of  75.3 MiB |####################  | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 96% of  75.3 MiB |##################### | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 97% of  75.3 MiB |##################### | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% of  75.3 MiB |######################| Elapsed Time: 0:00:03 ETA:  00:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% of  75.3 MiB |######################| Elapsed Time: 0:00:03 Time:  0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RGI60-01.20891
+Optimum small (in m) 0.08746271387787893
+Optimum large (in m) 656.9118156598652
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>N/A% of  77.2 MiB |                      | Elapsed Time: 0:00:00 ETA:  --:--:--
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  77.2 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:02:55
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  77.2 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:01:13
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1% of  77.2 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:01:12
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  2% of  77.2 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:00:25
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  5% of  77.2 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:24
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  8% of  77.2 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:08
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 12% of  77.2 MiB |##                    | Elapsed Time: 0:00:00 ETA:   0:00:08
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 16% of  77.2 MiB |###                   | Elapsed Time: 0:00:01 ETA:   0:00:05
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 20% of  77.2 MiB |####                  | Elapsed Time: 0:00:01 ETA:   0:00:05
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 24% of  77.2 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 26% of  77.2 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 29% of  77.2 MiB |######                | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 33% of  77.2 MiB |#######               | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 36% of  77.2 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 39% of  77.2 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 43% of  77.2 MiB |#########             | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 46% of  77.2 MiB |##########            | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 50% of  77.2 MiB |###########           | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 54% of  77.2 MiB |############          | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 58% of  77.2 MiB |############          | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 62% of  77.2 MiB |#############         | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 65% of  77.2 MiB |##############        | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 69% of  77.2 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 73% of  77.2 MiB |################      | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 74% of  77.2 MiB |################      | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 78% of  77.2 MiB |#################     | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 82% of  77.2 MiB |##################    | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 86% of  77.2 MiB |##################    | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 89% of  77.2 MiB |###################   | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 93% of  77.2 MiB |####################  | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 97% of  77.2 MiB |##################### | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% of  77.2 MiB |######################| Elapsed Time: 0:00:03 Time:  0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RGI60-01.10612
+Optimum small (in m) 2.3932170290279893
+Optimum large (in m) 306.7325531822173
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>N/A% of  81.7 MiB |                      | Elapsed Time: 0:00:00 ETA:  --:--:--
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  81.7 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:03:12
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  81.7 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:01:19
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1% of  81.7 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:00:42
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  2% of  81.7 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:00:41
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  5% of  81.7 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:14
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  8% of  81.7 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:09
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 11% of  81.7 MiB |##                    | Elapsed Time: 0:00:00 ETA:   0:00:08
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 14% of  81.7 MiB |###                   | Elapsed Time: 0:00:01 ETA:   0:00:06
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 18% of  81.7 MiB |####                  | Elapsed Time: 0:00:01 ETA:   0:00:05
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 22% of  81.7 MiB |####                  | Elapsed Time: 0:00:01 ETA:   0:00:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 25% of  81.7 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 26% of  81.7 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 29% of  81.7 MiB |######                | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 32% of  81.7 MiB |#######               | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 36% of  81.7 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 40% of  81.7 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 43% of  81.7 MiB |#########             | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 46% of  81.7 MiB |##########            | Elapsed Time: 0:00:02 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 50% of  81.7 MiB |###########           | Elapsed Time: 0:00:02 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 54% of  81.7 MiB |###########           | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 57% of  81.7 MiB |############          | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 61% of  81.7 MiB |#############         | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 64% of  81.7 MiB |##############        | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 68% of  81.7 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 71% of  81.7 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 75% of  81.7 MiB |################      | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 79% of  81.7 MiB |#################     | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 82% of  81.7 MiB |##################    | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 86% of  81.7 MiB |###################   | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 89% of  81.7 MiB |###################   | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 93% of  81.7 MiB |####################  | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 96% of  81.7 MiB |##################### | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% of  81.7 MiB |######################| Elapsed Time: 0:00:03 Time:  0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RGI60-01.17807
+Optimum small (in m) 7.371858617233926
+Optimum large (in m) 130.69421545268608
+</pre></div>
+</div>
+</div>
 </div>
 <p>The algorithm implemented in OGGM always seeks for the larger solution.</p>
 </div>
@@ -923,6 +1945,114 @@ In the code we always pick the larger solution.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>N/A% of  78.6 MiB |                      | Elapsed Time: 0:00:00 ETA:  --:--:--
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  78.6 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:03:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0% of  78.6 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:01:14
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  1% of  78.6 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:01:14
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  2% of  78.6 MiB |                      | Elapsed Time: 0:00:00 ETA:   0:00:25
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  5% of  78.6 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:24
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  8% of  78.6 MiB |#                     | Elapsed Time: 0:00:00 ETA:   0:00:09
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 12% of  78.6 MiB |##                    | Elapsed Time: 0:00:00 ETA:   0:00:06
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 16% of  78.6 MiB |###                   | Elapsed Time: 0:00:01 ETA:   0:00:05
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 20% of  78.6 MiB |####                  | Elapsed Time: 0:00:01 ETA:   0:00:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 24% of  78.6 MiB |#####                 | Elapsed Time: 0:00:01 ETA:   0:00:04
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 28% of  78.6 MiB |######                | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 31% of  78.6 MiB |######                | Elapsed Time: 0:00:01 ETA:   0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 34% of  78.6 MiB |#######               | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 35% of  78.6 MiB |#######               | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 39% of  78.6 MiB |########              | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 41% of  78.6 MiB |#########             | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 44% of  78.6 MiB |#########             | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 46% of  78.6 MiB |##########            | Elapsed Time: 0:00:01 ETA:   0:00:02
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 50% of  78.6 MiB |###########           | Elapsed Time: 0:00:01 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 54% of  78.6 MiB |###########           | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 58% of  78.6 MiB |############          | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 62% of  78.6 MiB |#############         | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 65% of  78.6 MiB |##############        | Elapsed Time: 0:00:02 ETA:   0:00:01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 69% of  78.6 MiB |###############       | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 73% of  78.6 MiB |################      | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 77% of  78.6 MiB |#################     | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 80% of  78.6 MiB |#################     | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 84% of  78.6 MiB |##################    | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 88% of  78.6 MiB |###################   | Elapsed Time: 0:00:02 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 92% of  78.6 MiB |####################  | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 96% of  78.6 MiB |##################### | Elapsed Time: 0:00:03 ETA:   0:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% of  78.6 MiB |######################| Elapsed Time: 0:00:03 ETA:  00:00:00
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% of  78.6 MiB |######################| Elapsed Time: 0:00:03 Time:  0:00:03
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<img alt="../_images/inversion_with_frontal_ablation_73_35.png" src="../_images/inversion_with_frontal_ablation_73_35.png" />
+</div>
 </div>
 <p>Put another way, the two laws are simply incompatible. Both curves will never meet in a domain between <span class="math notranslate nohighlight">\(q_{calving}\)</span> <span class="math notranslate nohighlight">\(&gt;\)</span> 0 and a <span class="math notranslate nohighlight">\(q_{calving}\)</span> that results in a non negative <span class="math notranslate nohighlight">\(\mu*\)</span>. This could be due to several reasons:</p>
 <ul class="simple">
@@ -938,6 +2068,21 @@ In the code we always pick the larger solution.</p>
 <span class="n">cfg</span><span class="o">.</span><span class="n">PARAMS</span><span class="p">[</span><span class="s1">&#39;use_kcalving_for_inversion&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="n">out</span> <span class="o">=</span> <span class="n">tasks</span><span class="o">.</span><span class="n">find_inversion_calving</span><span class="p">(</span><span class="n">gdir</span><span class="p">)</span>
 <span class="n">out</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;calving_flux&#39;: 0.02810564881034136,
+ &#39;calving_rate_myr&#39;: 57.953483737361545,
+ &#39;calving_mu_star&#39;: 87.96935557164645,
+ &#39;calving_law_flux&#39;: 0.028105648810341295,
+ &#39;calving_water_level&#39;: 83.39508240583478,
+ &#39;calving_inversion_k&#39;: 0.6,
+ &#39;calving_front_slope&#39;: 0.18201268515440294,
+ &#39;calving_front_water_depth&#39;: 96.58913956226903,
+ &#39;calving_front_free_board&#39;: 50.0,
+ &#39;calving_front_thick&#39;: 146.58913956226903,
+ &#39;calving_front_width&#39;: 3308.356272260822}
 </pre></div>
 </div>
 </div>
